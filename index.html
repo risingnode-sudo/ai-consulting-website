@@ -6,15 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <!-- NAVBAR -->
 <header class="navbar">
   <div class="container nav-content">
-    <img src="images/logo.png" class="logo">
+    <img src="images/logo.png" class="logo" alt="RisingNode">
 
-    <nav>
+    <nav class="nav-links">
       <a href="#services">Services</a>
       <a href="#process">Process</a>
       <a href="#about">About</a>
@@ -23,10 +22,10 @@
 
     <div class="social-icons">
       <a href="https://www.linkedin.com/company/risingnode/" target="_blank">
-        <img src="images/linkedin.png">
+        <img src="images/linkedin.png" alt="LinkedIn">
       </a>
       <a href="https://github.com/risingnode-sudo" target="_blank">
-        <img src="images/github.png">
+        <img src="images/github.png" alt="GitHub">
       </a>
     </div>
   </div>
@@ -35,7 +34,6 @@
 <!-- HERO -->
 <section class="hero">
   <div class="container hero-grid">
-
     <div class="hero-text">
       <h1>Automate Your Sales & Customer Support Using AI</h1>
       <p>Grow faster without hiring more staff. AI automation for startups and growing businesses.</p>
@@ -47,99 +45,83 @@
     </div>
 
     <div class="hero-image">
-      <img src="images/hero.jpg">
+      <img src="images/hero.jpg" alt="AI Consulting Hero">
     </div>
-
   </div>
 </section>
 
 <!-- SERVICES -->
-<section id="services" class="services">
+<section id="services" class="services section">
   <div class="container">
-    <h2>What I Can Build For You</h2>
-
+    <h2 class="center">What I Can Build For You</h2>
     <div class="service-grid">
-
       <div class="card">
         <h3>AI Sales Assistant</h3>
         <p>Lead qualification, meeting booking, CRM integration via website & WhatsApp.</p>
       </div>
-
       <div class="card">
         <h3>AI Customer Support Bot</h3>
         <p>24/7 multilingual support trained on your company knowledge.</p>
       </div>
-
       <div class="card">
         <h3>AI Booking & Order System</h3>
         <p>Restaurants, clinics, gyms, salons with payment integration.</p>
       </div>
-
       <div class="card">
         <h3>AI Internal Automation</h3>
         <p>HR bots, onboarding, vendor & partner support automation.</p>
       </div>
-
     </div>
   </div>
 </section>
 
 <!-- PROCESS -->
-<section id="process" class="process">
+<section id="process" class="section">
   <div class="container">
-    <h2>Simple 3-Step Process</h2>
-
+    <h2 class="center">Simple 3-Step Process</h2>
     <div class="process-grid">
       <div class="step">
         <h3>Discovery</h3>
-        <p>We understand your business, customers, and workflows.</p>
+        <p>Understand business, customers, workflows.</p>
       </div>
-
       <div class="step">
         <h3>Build & Integrate</h3>
-        <p>Deploy AI across website, WhatsApp and social platforms.</p>
+        <p>Deploy AI solutions across platforms.</p>
       </div>
-
       <div class="step">
         <h3>Launch & Optimize</h3>
-        <p>Monitor performance and continuously improve conversions.</p>
+        <p>Monitor performance and improve conversions.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="about">
-  <div class="container about-grid">
-
-    <div>
-      <h2>About Me</h2>
-      <p>
-        I am an AI Automation Consultant with 7+ years of experience in data, analytics,
-        and AI solutions. I help startups and small businesses automate sales and operations
-        using modern AI systems.
-      </p>
-    </div>
-
+<section id="about" class="about section dark">
+  <div class="container center">
+    <h2>About Me</h2>
+    <p>
+      I am an AI Automation Consultant with 7+ years of experience in data, analytics,
+      and AI solutions. I help startups and small businesses automate sales and operations
+      using modern AI systems.
+    </p>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="contact-section">
+<section id="contact" class="contact-section section">
   <div class="contact-grid">
 
     <div class="contact-text">
-      <h1>Leave us a message and<br>we'll get back to you.</h1>
-
+      <h1>Leave us a message and we'll get back to you.</h1>
       <div class="contact-images">
-        <img src="images/contact-1.jpg" class="img-large">
-        <img src="images/contact-2.jpg" class="img-small">
+        <img src="images/contact-1.jpg" class="img-large" alt="Office Scene">
+        <img src="images/contact-2.jpg" class="img-small" alt="Business Collaboration">
       </div>
     </div>
 
     <div class="contact-form">
       <form action="https://formsubmit.co/risingnode@gmail.com" method="POST">
-
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_next" value="thank-you.html">
 
@@ -147,10 +129,8 @@
         <input type="text" name="Last Name" placeholder="Last Name" required>
         <input type="email" name="Email" placeholder="Email *" required>
         <input type="text" name="Subject" placeholder="Subject">
-        <textarea name="Message" placeholder="Type your message here..." rows="5" required></textarea>
-
+        <textarea name="Message" placeholder="Your message here..." rows="5" required></textarea>
         <button type="submit">Submit</button>
-
       </form>
     </div>
 
@@ -158,8 +138,8 @@
 </section>
 
 <!-- FOOTER -->
-<footer>
-  <p>© 2026 RisingNode AI Consulting | Shubham Sethi</p>
+<footer class="footer center">
+  <p>© 2026 RisingNode AI Consulting | All Rights Reserved</p>
 </footer>
 
 </body>
