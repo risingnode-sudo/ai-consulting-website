@@ -1,137 +1,173 @@
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
-}
-
 body {
-  background: #020617;
-  color: #ffffff;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #222;
 }
 
 .container {
   max-width: 1200px;
   margin: auto;
-  padding: 80px 20px;
+  padding: 0 20px;
 }
 
+/* NAVBAR */
 .navbar {
-  background: #020617;
-  border-bottom: 1px solid #0f172a;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  background: #0b1d33;
+  padding: 20px 0;
 }
 
-.nav-flex {
+.nav-content {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  justify-content: space-between;
 }
 
 .logo {
-  height: 48px;
+  width: 160px;
 }
 
+nav a {
+  color: white;
+  margin-left: 25px;
+  text-decoration: none;
+}
+
+.social-icons img {
+  width: 26px;
+  margin-left: 15px;
+  filter: invert(1);
+}
+
+/* BUTTONS */
+.btn-primary {
+  background: #1f8cff;
+  padding: 12px 20px;
+  color: white;
+  border-radius: 6px;
+}
+
+.btn-secondary {
+  border: 2px solid white;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 6px;
+}
+
+/* HERO */
 .hero {
-  background: linear-gradient(135deg, #020617, #0f172a);
+  background: linear-gradient(120deg, #0b1d33, #132c4d);
+  color: white;
+  padding: 120px 0;
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
 }
 
-.hero h1 {
-  font-size: 52px;
-  margin-bottom: 20px;
+.hero img {
+  width: 100%;
+  border-radius: 12px;
 }
 
-.hero p {
-  font-size: 20px;
-  color: #cbd5f5;
+/* SERVICES */
+.services {
+  padding: 100px 0;
+  background: #f5f7fb;
 }
 
-.hero-card {
-  background: #0f172a;
-  padding: 40px;
-  border-radius: 16px;
-  border: 1px solid #1e293b;
-}
-
-.section h2 {
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-
-.subtitle {
-  color: #94a3b8;
-  margin-bottom: 40px;
-}
-
-.grid {
+.service-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 24px;
-  margin-top: 40px;
+  grid-template-columns: repeat(4,1fr);
+  gap: 30px;
 }
 
-.card, .service, .service-card {
-  background: #0f172a;
-  padding: 28px;
-  border-radius: 14px;
-  border: 1px solid #1e293b;
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
-.dark {
-  background: #020617;
+/* PROCESS */
+.process {
+  padding: 100px 0;
 }
 
-.btn-primary {
-  background: linear-gradient(135deg, #2563eb, #38bdf8);
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 40px;
+}
+
+/* ABOUT */
+.about {
+  background: #0b1d33;
   color: white;
-  padding: 14px 28px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: 600;
+  padding: 100px 0;
 }
 
-.btn-outline {
-  border: 1px solid #2563eb;
-  color: #38bdf8;
-  padding: 14px 28px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: 600;
+/* CONTACT */
+.contact-section {
+  background: #f7f6ef;
+  padding: 120px 5%;
 }
 
-.cta-row {
-  margin-top: 40px;
+.contact-grid {
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.contact-text h1 {
+  font-size: 3rem;
+  color: #4b5a2a;
+}
+
+.img-large {
+  width: 320px;
+}
+
+.img-small {
+  width: 260px;
+  position: absolute;
+  margin-top: -80px;
+  margin-left: -100px;
+  border: 10px solid #f7f6ef;
+}
+
+.contact-form form {
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  gap: 25px;
 }
 
-.center {
-  text-align: center;
+.contact-form input,
+.contact-form textarea {
+  border: none;
+  border-bottom: 2px solid #777;
+  padding: 10px;
+  background: transparent;
 }
 
-.large {
-  padding: 18px 40px;
-  font-size: 18px;
+.contact-form button {
+  background: #6b7352;
+  color: white;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
 }
 
+/* FOOTER */
 footer {
-  background: #020617;
-  border-top: 1px solid #0f172a;
-}
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  color: #64748b;
+  background: #0b1d33;
+  color: white;
+  text-align: center;
+  padding: 25px;
 }
